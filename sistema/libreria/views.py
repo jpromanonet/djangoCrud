@@ -10,3 +10,6 @@ def us(request):
 
 def books(request):
     return render(request, 'books/index.html')
+
+def addBooks(request):
+    return render(request, 'books/add.html')
