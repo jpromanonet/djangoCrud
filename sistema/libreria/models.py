@@ -12,5 +12,5 @@ class Book(models.Model):
         return row
     
     def delete(self, using=None, keep_parents=False);
-        self.image.delete()
+        self.image.delete(self.image.name)
         super().delete()
